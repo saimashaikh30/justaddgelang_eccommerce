@@ -1,0 +1,12 @@
+# Android Ignore
+AndroidApp/.gradle/
+AndroidApp/.idea/
+AndroidApp/build/
+AndroidApp/local.properties
+*.iml
+
+# ASP.NET Ignore
+WebApi/bin/
+WebApi/obj/
+WebApi/.vs/
+*.user
