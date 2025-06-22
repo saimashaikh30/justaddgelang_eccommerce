@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- Back Button -->
+
+    <!-- App Title -->
+<!--    <Button-->
+<!--        android:id="@+id/btnBack"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="#EFD6FD"-->
+<!--        android:text="Back"-->
+<!--        android:textColor="@android:color/white" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#7D3C98"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Username Field -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Enter Username"
+        android:inputType="text"
+        android:textColor="#7D3C98"
+        android:padding="10dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Username Error Message -->
+    <TextView
+        android:id="@+id/tvUsernameError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invalid username"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"/>
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColor="#7D3C98"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Password Error Message -->
+    <TextView
+        android:id="@+id/tvPasswordError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invalid password"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#EFD6FD"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Forgot Password Link -->
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:text="Forgot Password?"
+        android:textColor="#7D3C98"
+        android:textStyle="bold"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Registration Link -->
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:text="New user? Register"
+        android:textColor="#7D3C98"
+        android:textStyle="bold"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>

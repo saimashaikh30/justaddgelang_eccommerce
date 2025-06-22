@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingBottom="24dp">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Product Image"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="22sp"
+            android:textColor="#7D3C98"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Product Price -->
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="₹249.99"
+            android:textSize="18sp"
+            android:textColor="#7D3C98"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Add to Cart and Wishlist Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/add_to_cart_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/baseline_shopping_cart_24"
+                android:tint="#7D3C98"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Add to cart"
+                tools:ignore="TouchTargetSizeCheck,UseAppTint" />
+
+            <ImageButton
+                android:id="@+id/add_to_wishlist_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_favorite_24"
+                android:tint="#7D3C98"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Add to wishlist"
+                tools:ignore="TouchTargetSizeCheck,UseAppTint" />
+        </LinearLayout>
+
+        <!-- Reviews Section -->
+        <TextView
+            android:id="@+id/reviews_section_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Reviews"
+            android:textSize="18sp"
+            android:textColor="#7D3C98"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- RecyclerView for dynamic reviews -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/review_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:nestedScrollingEnabled="false" />
+
+        <!-- Review Submission Section -->
+        <TextView
+            android:id="@+id/review_submission_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Your Review"
+            android:textSize="18sp"
+            android:textColor="#7D3C98"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- RatingBar -->
+        <RatingBar
+            android:id="@+id/review_rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Review Input -->
+        <EditText
+            android:id="@+id/review_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="4"
+            android:maxLines="6"
+            android:hint="Write your review here"
+            android:padding="8dp"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_review_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit Review"
+            android:backgroundTint="#7D3C98"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</ScrollView>
